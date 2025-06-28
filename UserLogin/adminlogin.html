@@ -40,10 +40,10 @@
 
     .rightbox{
         display: flex;
-        flex-direction: column;
-        justify-content: center; 
+        flex-direction: column; 
         align-items: center;        
         flex: 1;
+        padding-top: 10%;
         background-color: #04361a; 
     }
 
@@ -84,9 +84,7 @@
          width: 300px;
       height: 300px;
       object-fit: contain;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      
     }
 
     .cctlogo {
@@ -96,6 +94,15 @@
       
     }
 
+    .titlelogo{
+
+      display: flex;
+      justify-content: space-between;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 10px;
+    }
+
    
 </style>
 <body>
@@ -103,7 +110,13 @@
   <div class="box">
 
     <div class="leftbox">
+
+      <div class="titlelogo">
  <img src="cctlogo.png" alt="Logo" class="cctlogo">
+ <img src="scslogo.png" alt="Logo" class="cctlogo">
+
+</div>
+
 
 <div class="adminform">
 
@@ -125,6 +138,9 @@
 
 
     </div>
+
+
+
     <div class="rightbox">
 <div class="adminscslogo">
     <img src="scslogo.png" alt="Logo" class="scslogo">

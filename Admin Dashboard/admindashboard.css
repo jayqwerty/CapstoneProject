@@ -1,0 +1,132 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  scroll-behavior: smooth;
+}
+
+#usercctlogo{
+
+   width: 50px;
+      height: 50px;
+      object-fit: contain;
+      
+}
+#userscslogo{
+
+   width: 50px;
+      height: 50px;
+      object-fit: contain;
+      
+}
+
+.sidebartitle{
+    display: flex;
+    justify-content: center ;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.sidebar {
+  width: 300px;
+  min-height: 100vh;
+  background-color: #04361a;
+  position: fixed;
+  
+  left: 0;
+  overflow-y: auto;
+  border-right: 2px solid #333;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a {
+  display: block;
+  padding: 30px 50px;
+  color: #f8f8f8;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s, padding-left 0.3s;
+  margin-bottom: 8px; 
+  
+  
+}
+.sidebar a:hover {
+  background-color: #2C554B;
+  padding-left: 32px;
+}
+
+.sidebar a.active {
+  background-color: #2C554B ;
+  color: #fff ;
+}
+
+.content {
+  margin-left: 240px; 
+  padding: 20px;
+  padding-top: 1px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fefefe;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    left: -240px;
+  }
+
+  .sidebar.show {
+    left: 0;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+
+
+
+.admindashboardcontent {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;        
+  flex: 1;
+  padding-top: 5%;
+  background-color: #ffffff;
+  margin-left: 300px; 
+  min-height: 100vh;
+}
+
+
+
+#dashboardid{
+    
+  height: 100vh;
+
+}
+
+#studentid{
+    
+  height: 100vh;
+
+}
+
+#coordinatorid{
+    
+  height: 100vh;
+
+}
+
+#organizationid{
+    
+  height: 100vh;
+
+}
