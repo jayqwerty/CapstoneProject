@@ -1,11 +1,12 @@
 
-* {
+ *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
   color: rgb(0, 0, 0);
   scroll-behavior: smooth;
+  
 }
 
 #usercctlogo{
@@ -66,17 +67,7 @@
   color: #fff ;
 }
 
-.content {
-  margin-left: 240px; 
-  padding: 20px;
-  padding-top: 1px; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #fefefe;
-  transition: margin-left 0.3s ease-in-out;
-}
+
 
 @media (max-width: 768px) {
   .sidebar {
@@ -94,6 +85,7 @@
 
 
 
+
 .admindashboardcontent {
   display: flex;
   flex-direction: column; 
@@ -103,30 +95,58 @@
   background-color: #ffffff;
   margin-left: 300px; 
   min-height: 100vh;
+  
 }
 
 
 
 #dashboardid{
     
-  height: 100vh;
+  height: 90vh;
 
 }
 
-#studentid{
-    
-  height: 100vh;
 
-}
 
-#coordinatorid{
-    
-  height: 100vh;
+ .stats-card {
+      border-radius: 10px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      text-align: center;
+      flex: 1;
+      margin: 10px;
+    }
 
-}
+    .stats-icon {
+      font-size: 2.2rem;
+      display: block;
+      margin-bottom: 5px;
+    }
 
-#organizationid{
-    
-  height: 100vh;
+    .green-icon { color: green; }
+    .blue-icon { color: #0dcaf0; }
+    .yellow-icon { color: #ffc107; }
 
-}
+    .stats-count {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .stats-label {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #555;
+    }
+
+    .stats-container {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      padding: 30px;
+      flex-wrap: wrap;
+    }
+
+
+
+

@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="admindashboard.css">
 </head>
+
+
 
 <body>
       <div class="sidebar">
@@ -16,10 +20,10 @@
          
     <img src="scslogo.png" alt="Logo" id="userscslogo"><br>
     </div>   
-    <a href="#dashboardid">Dashboard</a>
-    <a href="#studentid" >Student</a>
-    <a href="#coordinatorid" >Coordinator</a>
-    <a href="#organizationid" >Organization</a>
+    <a href="admindashboard.html" class="active">Dashboard</a>
+    <a href="adstudent.html" >Student</a>
+    <a href="adcoordinator.html" >Coordinator</a>
+    <a href="adorganization.html" >Organization</a>
     
     
     
@@ -36,33 +40,35 @@
     <section class="dashboard" id="dashboardid">
 
 
-    <h1>STUDENT DASHBOARD</h1>
-
-    </section>
-
-    <section class="student" id="studentid">
-
-
-    <h1>STUDENT DASHBOARD</h1>
-
-    </section>
-
-        <section class="coordinator" id="coordinatorid">
-
-
-    <h1>STUDENT DASHBOARD</h1>
+    <h1>ADMIN DASHBOARD</h1>
 
     </section>
 
 
-        <section class="organization" id="organizationid">
 
+    
+<div class="stats-container">
+  <!-- Trainee Card -->
+  <div class="stats-card">
+    <i class="bi bi-person-fill stats-icon green-icon"></i>
+    <div class="stats-label">TRAINEE</div>
+    <div class="stats-count">55</div>
+  </div>
 
-    <h1>STUDENT DASHBOARD</h1>
+  <!-- Coordinator Card -->
+  <div class="stats-card">
+    <i class="bi bi-people-fill stats-icon blue-icon"></i>
+    <div class="stats-label">COORDINATOR</div>
+    <div class="stats-count">7</div>
+  </div>
 
-    </section>
-
-
+  <!-- Organization Card -->
+  <div class="stats-card">
+    <i class="bi bi-building stats-icon yellow-icon"></i>
+    <div class="stats-label">ORGANIZATION</div>
+    <div class="stats-count">13</div>
+  </div>
+</div>
 
 
 
