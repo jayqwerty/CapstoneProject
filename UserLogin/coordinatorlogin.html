@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Admin Login</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-
 
 <style>
 
-* {
+
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  color: black;
 }
 
  body {
@@ -40,14 +42,14 @@
 
     .rightbox{
         display: flex;
-        flex-direction: column;
-        justify-content: center; 
+        flex-direction: column; 
         align-items: center;        
         flex: 1;
+        padding-top: 10%;
         background-color: #04361a; 
     }
 
-    .adminform{
+    .coordinatorform{
 
         display: flex;
         justify-content: center;
@@ -84,9 +86,7 @@
          width: 300px;
       height: 300px;
       object-fit: contain;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      
     }
 
     .cctlogo {
@@ -96,28 +96,41 @@
       
     }
 
-   
+    .titlelogo{
+
+      display: flex;
+      justify-content: space-between;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 10px;
+    }
+
+    .stats-icon {
+  font-size: 15.2rem;
+  margin-bottom: 5px;
+}
 
    
-
-
 </style>
-
-
-
-
 <body>
 
   <div class="box">
 
     <div class="leftbox">
- <img src="cctlogo.png" alt="Logo" class="cctlogo">
 
-<div class="adminform">
+      <div class="titlelogo">
+ <img src="cctlogo.png" alt="Logo" class="cctlogo">
+ <img src="scslogo.png" alt="Logo" class="cctlogo">
+
+</div>
+
+
+<div class="coordinatorform">
 
 
 <form>
-    <h1 style="text-align: center;">Faculty Login</h1><br/><br/><br/><br/>
+ 
+    <h1 style="text-align: center;">Coordinator Login</h1><br/><br/><br/><br/>
     <input class="textbox" type="text" placeholder="Username"/><br/><br/>
 
     <input class="textbox" type="password" placeholder="Password"/><br/><br/><br/>
@@ -132,15 +145,17 @@
 
 
     </div>
+
+
+
     <div class="rightbox">
-<div class="adminscslogo">
-    <img src="scslogo.png" alt="Logo" class="scslogo">
+<div class="rightboxlogo">
+    <i class="bi bi-person-workspace stats-icon blue-icon"></i>
 </div>
 
 <div class="rightboxcontent">
-<h1>asdasd</h1>
-<h1>asdasd</h1>
-<h1>asdasd</h1>
+<h1>SCS OJT MONITORING SYSTEM</h1>
+
 </div>
 
     </div>
